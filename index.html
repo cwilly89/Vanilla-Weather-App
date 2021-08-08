@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <title>Local Forecast</title>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+    <div class="containter">
+      <div class="weather-app-wrapper">
         <div class="weather-app">
-       <h1>Burgaw</h1>
+          <div class="overview">
+            <h1>Burgaw</h1>
+            <ul>
+              <li>Friday 16:00</li>
+              <li>Clear</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="Cloudy"
+                  class="float-left"
+                />
 
-       <ul>
-           <li>
-               Wednesday 10:55 pm
-           </li>
-           <li>
-               Clear
-           </li>
-       </ul>
-       <div class="row">
-           <div class="col-6">
-               <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="clear" />
-               69 °F | °C
-         </div> 
-         <div class="col-6">    
-               <ul>
-                   <li>
-                       Precipitation: 1%
-                   </li>
-                   <li>
-                       Humidity: 65%
-                   </li>
-                   <li>
-                       Wind: 4 mph
-                   </li>
-               </ul>
+                <div class="float-left">
+                  <strong>67</strong>
+                  <span class="units"> °F <a href="#">| °C</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: <span id="precipitation"></span></li>
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind: <span id="wind"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/cwilly89/Vanilla-Weather-App"
+            target="_blank"
+          >
+            Open-source code
+          </a>
+          by, Channell Mascaro
+        </small>
+      </div>
     </div>
-    <small>
-        <a href="https://github.com/cwilly89/Vanilla-Weather-App"
-        target="_blank" > Open-source code  </a>
-       by, Channell Mascaro
-    </small>
-    </div>
-    
+  </body>
     <script src="src/index.js"></script>
-   
-</body>
+  </body>
 </html>
