@@ -26,10 +26,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Burgaw</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li>Friday 16:00</li>
-              <li>Clear</li>
+              <li id="date"></li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -39,10 +39,11 @@
                   src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
                   alt="Cloudy"
                   class="float-left"
+                  id="icon"
                 />
 
                 <div class="float-left">
-                  <strong>67</strong>
+                  <strong id="temperature"></strong>
                   <span class="units"> °F <a href="#">| °C</a></span>
                 </div>
               </div>
