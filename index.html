@@ -18,56 +18,64 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Local Forecast</title>
   </head>
   <body>
-    <div class="containter">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                  alt="Cloudy"
-                  class="float-left"
-                  id="icon"
-                />
-
-                <div class="float-left">
-                  <strong id="temperature"></strong>
-                  <span class="units"> °F <a href="#">| °C</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <ul>
-                <li>Precipitation: <span id="precipitation"></span></li>
-                <li>Humidity: <span id="humidity"></span></li>
-                <li>Wind: <span id="wind"></span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <small>
-          <a
-            href="https://github.com/cwilly89/Vanilla-Weather-App"
-            target="_blank"
-          >
-            Open-source code
-          </a>
-          by, Channell Mascaro
-        </small>
-      </div>
-    </div>
+<div class="container">
+	<div class="weather-app-wrapper">
+	<div class="weather-app">
+		<div class="overview">
+<h1 id="city">
+</h1>
+<ul>
+	<li>
+		Monday 13:00
+	</li>
+	<li id="description">
+		
+	</li>
+</ul>
+</div>
+<div class="row">
+	<div class="col-6">
+		<div class="clearfix weather-temperature">
+		<img 
+		src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
+		alt="cloudy"
+		class="float-left" 
+		/>
+		<div class="float-left">
+		<strong id="temperature"></strong><span class="units"> °F | °C </span>
+	</div>
+	</div>
+</div>
+	<div class="col-6">
+		<ul>
+			<li>
+				Precipitation: <span id="precipitation"></span>
+			</li>
+			<li>
+				Humidity: <span id="humidity"></span>%
+			</li>
+			<li>
+				Wind: <span id="wind"></span> mph
+			</li>
+		</ul>
+	</div>
+</div>
+<small>
+		<a
+			href="https://github.com/cwilly89/Vanilla-Weather-App"
+			target="_blank"
+		>
+			Open-source code
+		</a>
+		by, Channell Mascaro
+	</small>
+</div>
+</div>
+</div>
   </body>
     <script src="src/index.js"></script>
   </body>

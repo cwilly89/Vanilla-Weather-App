@@ -15,7 +15,7 @@ ul {
 }
 li {
   list-style: none;
-  color: darkgreen;
+  color: rgb(21, 138, 21);
   text-transform: capitalize;
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ li {
 .weather-app {
   margin: 30px auto;
   padding: 25px;
-  border: 1px solid rgb(50, 206, 211);
+  border: 5px solid orange;
   border-radius: 10px;
 }
 .overview {
