@@ -23,6 +23,40 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Sun", "Mon", "Tues"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+ 
+  <div class="col-2">
+    <div class="weather-forecast-date">
+    ${day}
+  </div>
+    <img 
+    src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" 
+    alt="" 
+    width="40"/>
+    <div class="weather-forecast-tempeatures">
+      <span class="weather-forecast-temperature-max"> 82°</span>
+      <span class="weather-forecast-temperature-min">60°</span>
+  
+  </div>
+  </div>
+  
+
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -84,4 +118,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", displayFahrenhitTemperature);
 
-search("Tokyo");
+search("Seattle");
+displayForecast();
